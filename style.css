@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  /*width: 1343px;
+  height: 1024px;*/
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  padding: 0 auto;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    "logo logo logo"
+    "hero hero hero"
+    "cards cards cards";
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 58px;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+.logo__title {
+  padding: 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #18dc37;
+}
+
+.source {
+  font-size: 30px;
+  color: #18dc37; /* while*/
+  transform: rotate(20deg);
+}
+
+/*
+.nav {
+  grid-area: logo;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: white;
+  width: auto;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+}
+.navigate {
+  grid-area: logo;
+  display: inline;
+  justify-content: center;
+  align-content: center;
+  text-align: right;
+  height: 58px;
+  padding: 10px;
+}
+
+.nav__links {
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.nav__li {
+  margin: 0 10px;
+  font-size: small;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+}
+
+*/
+.hero {
+  grid-area: hero;
+  margin-top: -250px;
+
+  height: 570px;
+  border-radius: 30px;
+  background-image: url(/images/hero_cat.jpg);
+  background-size: cover;
+  box-shadow: 10px 13px 52px -19px rgba(8, 5, 8, 0.16);
+
+  background-position: center;
+}
+
+.title__hero {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  margin-left: 80px;
+  margin-top: 150px;
+  font-size: 36px;
+}
+
+.cards {
+  grid-area: cards;
+
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.cards__card {
+  display: inline-flex;
+  justify-content: space-around;
+  border-radius: 30px;
+
+  width: 400px;
+  height: 300px;
+  box-shadow: 10px 13px 52px -19px rgba(8, 5, 8, 0.16);
+}
+
+.cards__card:hover {
+  transform: translatey(-40px) rotate(5deg);
+
+  transition: all ease-out 0.8s;
+}
+.food {
+  background-image: url(/images/food.jpg);
+  background-size: cover;
+}
+
+.heal {
+  background-image: url(/images/dogNew.jpg);
+  background-size: cover;
+}
+
+.adopt {
+  background-image: url(/images/adoptNew.jpg);
+  background-size: cover;
+}
+
+.footer {
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  color: lightslategray;
+}
+
+.text_card2,
+.text_card1,
+.text_card3 {
+  font-size: 32px;
+  color: white;
+  list-style: none;
+  opacity: 1;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
