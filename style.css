@@ -131,7 +131,7 @@ body {
   display: inline-flex;
   justify-content: space-around;
   border-radius: 30px;
-
+  transition: all ease-in-out 0.5s;
   width: 400px;
   height: 300px;
   box-shadow: 10px 13px 52px -19px rgba(8, 5, 8, 0.16);
@@ -140,7 +140,7 @@ body {
 .cards__card:hover {
   transform: translatey(-40px) rotate(5deg);
 
-  transition: all ease-out 0.8s;
+  transition: all ease-out 0.5s;
 }
 .food {
   background-image: url(/images/food.jpg);
