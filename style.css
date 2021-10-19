@@ -11,10 +11,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  height: 90%;
-  /*width: 1343px;
-  height: 1024px;*/
+  width: 80%;
+  /*height: 40%;*/
 
   display: grid;
 
@@ -54,6 +52,7 @@ body {
   font-size: 30px;
   color: #18dc37; /* while*/
   transform: rotate(20deg);
+  transition: ease-in-out 0.5s;
 }
 
 /*
@@ -114,6 +113,40 @@ body {
   margin-left: 80px;
   margin-top: 150px;
   font-size: 36px;
+  color: #333;
+}
+
+.hero__p {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.hero__join {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  background-color: #18dc37;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.hero__join:hover {
+  background-color: orangered;
+  transition: all ease-in-out 0.5s;
 }
 
 .cards {
@@ -131,6 +164,7 @@ body {
   display: inline-flex;
   justify-content: space-around;
   border-radius: 30px;
+  border: 2px solid white;
   transition: all ease-in-out 0.5s;
   width: 400px;
   height: 300px;
@@ -140,7 +174,7 @@ body {
 .cards__card:hover {
   transform: translatey(-40px) rotate(5deg);
 
-  transition: all ease-out 0.5s;
+  transition: all ease-out 0.8s;
 }
 .food {
   background-image: url(/images/food.jpg);
