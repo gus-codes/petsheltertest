@@ -16,15 +16,15 @@ body {
 
   display: grid;
 
-  /*grid-template-columns: repeat(2, 1fr);*/
-  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3fr);
   margin: 0 auto;
   padding: 0 auto;
   justify-content: center;
   align-content: center;
   grid-template-areas:
     "logo logo logo"
-    /*"hero hero hero"*/
+    "hero hero hero"
     "cards cards cards";
 }
 
